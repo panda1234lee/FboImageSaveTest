@@ -1,0 +1,4 @@
+﻿  GlHelper.cpp
+d:\projects\visual studio 2015\gl_test\fbo_test\fbo_test\glhelper.cpp(176): warning C4715: “GlHelper::getSingleInstance”: 不是所有的控件路径都返回值
+  FBO_Test.vcxproj -> D:\Projects\Visual Studio 2015\GL_Test\FBO_Test\Debug\FBO_Test.exe
+  FBO_Test.vcxproj -> D:\Projects\Visual Studio 2015\GL_Test\FBO_Test\Debug\FBO_Test.pdb (Full PDB)
