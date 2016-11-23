@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
 	gluh.setupOthers();
 
 	gluh.display();
+	gluh.keyboardCallback();
 	gluh.loop();
     
     return 0;

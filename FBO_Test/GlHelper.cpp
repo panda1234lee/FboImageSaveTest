@@ -102,7 +102,8 @@ void GlHelper::render(void)
 	// --------------------------------------------------------
 
 	// ☆
-	//saveCVImage("../image.bmp");	// 切记在glutSwapBuffer之前glReadPixels
+	if (1 == which_frame_buffer)
+		saveCVImage("../image_1.bmp");	// 切记在glutSwapBuffer之前glReadPixels
 
 }
 
@@ -132,7 +133,8 @@ void GlHelper::renderToTarget(void)
 	glEnd();
 	// --------------------------------------------------------
 	// ☆
-	saveCVImage("../image.bmp");	// 切记在glutSwapBuffer之前glReadPixels
+	if(0 == which_frame_buffer)
+		saveCVImage("../image_0.bmp");	// 切记在glutSwapBuffer之前glReadPixels
 
 	glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
 }

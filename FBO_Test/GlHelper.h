@@ -25,6 +25,8 @@ public:
 	const double NEAR_PLANE = 1.0f;
 	const double FAR_PLANE = 1000.0f;
 
+	int which_frame_buffer; // 0: 自定义的framebuffer， 1：系统framebuffer，其他则不截图
+
 private:
 
 	unsigned int fbo ;							// FBO对象的句柄

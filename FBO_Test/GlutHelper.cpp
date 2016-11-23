@@ -22,8 +22,6 @@ void GlutHelper::setupWindow(int argc, char *argv[])
 	glutInitWindowPosition(100, 100);
 	glutInitWindowSize(800, 600);
 	glutCreateWindow("Hello Framebuffer !");
-
-	
 }
 
 void GlutHelper::setupOthers()
@@ -42,6 +40,25 @@ void GlutHelper::display()
 void GlutHelper::loop()
 {
 	glutMainLoop();
+}
+
+void GlutHelper::keyboardCallback()
+{
+	glutKeyboardFunc(&processNormalKeys);
+}
+
+void GlutHelper::processNormalKeys(unsigned char key, int x, int y)
+{
+	if (key == 27)
+		exit(0);
+	else if (key == '0')
+	{
+		s_glh->which_frame_buffer = 0;
+	}
+	else if (key == '1')
+	{
+		s_glh->which_frame_buffer = 1;
+	}
 }
 
 void GlutHelper::setGlHelper(GlHelper* glh)

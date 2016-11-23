@@ -9,9 +9,11 @@ public:
 	void setupWindow(int argc, char *argv[]);
 	void setupOthers();
 	void display();
+	void keyboardCallback();
 	void loop();
 	void setGlHelper(GlHelper* glh);
 
+	static void processNormalKeys(unsigned char key, int x, int y);
 	static void renderScene();
 
 private:
